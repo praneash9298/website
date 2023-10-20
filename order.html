@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unique Bike Taxi Service</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('GIRL1.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 600px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .user-details {
+            display: grid;
+            gap: 15px;
+        }
+
+        .input-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-box input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-box span {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button input {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="z-index: 1;">
+        <div class="title">
+            <h1>Welcome to Beca Taci Service</h1>
+        </div>
+        <div class="content">
+              <form action="http://localhost:8000/sign_up" method="post">
+                <h2>Book your order</h2>
+                <div class="user-details">
+                
+                    <div class="input-box">
+                      <span class="details">Name</span>
+                      <input type="text" placeholder="Enter your name" required  name="name">
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Phone Number</span>
+                      <input type="number" placeholder="Enter your Number" required name="num">
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Email</span>
+                      <input type="text" placeholder="Enter your email" required  name="email">
+                    </div>
+                    <div class="input-box">
+                      <span class="details">CAR OR BIKE</span>
+                      <input type="text" placeholder="Choose car or bike" required name="choose">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">NO OF PERSONS</span>
+                        <input type="number" placeholder="Enter no of persons" required name="qua">
+                      </div>
+                     
+                    <div class="input-box">
+                      <span class="details">Address</span>
+                      <input type="text" placeholder="Enter your address" required name="add">
+                    </div>
+                    <div class="input-box">
+                      <span class="details">City</span>
+                      <input type="text" placeholder="Enter City" required name="city">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Pincode</span>
+                        <input type="text" placeholder="Enter Your Pincode" required name="pin">
+                      </div>
+                      <div class="input-box">
+                        <img src="google.png" alt="Girl in a jacket" width="400" height="500">                   </div>             
+                   </div>
+                <div class="button">
+                    <input type="submit" id="submitDetails" name="submitDetails" value="Place Order" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

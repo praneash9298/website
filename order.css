@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background: url(images/background\ image.jpg) no-repeat center center/cover;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-container {
+  background-color: aliceblue;
+  padding: 100px;
+}
+.input-1 {
+  height: 42px;
+  width: 303px;
+  border: 2px solid aliceblue;
+
+  border-bottom: 2px solid black;
+
+  margin: 15px;
+  background-color: aliceblue;
+  color: black;
+}
+.input-box {
+  text-align: center;
+}
+.btn-container {
+  text-align: center;
+}
+.btn {
+  background-color: rgb(55, 52, 221);
+  padding: 10px;
+  border: 2px solid rgb(79, 49, 232);
+  color: azure;
+  border-radius: 10px;
+}
+.btn:active {
+  background-color: blue;
+}
+.btn:hover {
+  background-color: rgb(97, 97, 209);
+}
